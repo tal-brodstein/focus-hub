@@ -1,0 +1,13 @@
+# Arduino Libraries — Focus Hub
+# Install via Arduino IDE → Sketch → Include Library → Manage Libraries
+# or via Arduino CLI: arduino-cli lib install "<name>"
+
+# ── Required (1 library) ──────────────────────────────────────────────
+
+DHT sensor library
+  Author:  Adafruit
+  Install: search "DHT sensor library" by Adafruit
+
+# ── Built-in (no install needed) ─────────────────────────────────────
+
+(none — Wire, MPU6050, and LiquidCrystal_I2C have all been removed)

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\arduino\")",
+      "Bash(Out-Null)",
+      "Bash(Write-Output \"done\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(curl *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\talbr\\\\focus-hub\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "PowerShell(ConvertTo-String *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\web\" -Recurse -Depth 3 | Where-Object {$_.PSIsContainer} | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\web\\\\src\" -Recurse | Where-Object {-not $_.PSIsContainer} | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\web\" -Depth 1 | Where-Object {-not $_.PSIsContainer})",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\arduino\" -Recurse | Where-Object {-not $_.PSIsContainer} | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\\\\python-bridge\" -Recurse | Where-Object {-not $_.PSIsContainer})",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\talbr\\\\focus-hub\" | Where-Object {-not $_.PSIsContainer})"
+    ]
+  }
+}
